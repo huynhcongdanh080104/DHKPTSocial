@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dhkptsocial.netlify.app/sitemap.xml

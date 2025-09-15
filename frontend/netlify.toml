@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"          # Lệnh để build ứng dụng
+  publish = "dist"                  # Thư mục đầu ra sau khi build
+[build.environment]
+  REACT_APP_API_URL = "https://dhkptsocial.onrender.com"
+  
+# Cấu hình redirects nếu cần (chuyển hướng URL)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+  X-Robots-Tag = "index, follow"
